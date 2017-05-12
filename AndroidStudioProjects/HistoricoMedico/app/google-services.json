@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "602900350318",
+    "firebase_url": "https://historico-medico.firebaseio.com",
+    "project_id": "historico-medico",
+    "storage_bucket": "historico-medico.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602900350318:android:a2d8f47c296b99ff",
+        "android_client_info": {
+          "package_name": "br.com.gushiman.historicomedico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602900350318-f2g31ttn6339o8lv63jmjlth89fk41qg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.gushiman.historicomedico",
+            "certificate_hash": "c191adbe2fe4841cd2b098e7284e8c48b88669f5"
+          }
+        },
+        {
+          "client_id": "602900350318-dnjlmsi6p702slahtpkjqo0suvnmpi4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR9WwVHMUG_dLT6zJhBkD8T1aFi3FPeFE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602900350318-dnjlmsi6p702slahtpkjqo0suvnmpi4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
