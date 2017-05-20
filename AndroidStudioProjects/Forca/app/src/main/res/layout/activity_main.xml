@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.manabu.forca.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgview_jogar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_inicial"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/txtview_dificuldade"
+        android:text="Dificuldade: Patrick"
+        android:textSize="25dp"
+        android:textColor="#8f7ec6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_dificuldade"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp">
+        <RadioButton
+            android:id="@+id/rb_facil"
+            android:text="Fácil"
+            android:textSize="30dp"
+            android:textColor="#567eed"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <RadioButton
+            android:id="@+id/rb_dificil"
+            android:text="Analista"
+            android:textSize="30dp"
+            android:textColor="#567eed"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgview_forca"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_forca"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/imgview_forca_1_erro"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_forca_1_erro"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/imgview_forca_2_erros"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_forca_2_erros"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/imgview_forca_3_erros"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_forca_3_erros"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/imgview_forca_4_erros"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_forca_4_erros"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/imgview_forca_5_erros"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_forca_5_erros"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/imgview_forca_6_erros"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_forca_6_erros"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/imgview_acertou"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_acertou"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/imgview_Sofia"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_sofia"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/imgview_Pedro"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pedro"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/t_view_mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="55dp"
+        android:textStyle="bold"
+        android:text="" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/t_view_palavra"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="55dp"
+        android:text="" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:id="@+id/lilayout_am"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_a"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="A"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_b"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="B"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_c"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="C"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_d"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="D"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_e"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="E"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_f"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="F"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_g"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="G"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_h"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="H"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_i"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="I"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_j"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="J"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_k"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="K"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_l"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="L"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_m"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="M"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lilayout_nz"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_n"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="N"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_o"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="O"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_p"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="P"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_q"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="Q"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_r"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="R"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_s"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="S"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_t"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="T"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_u"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="U"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_v"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="V"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_w"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="W"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_x"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="X"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_y"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="Y"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+        <Button
+            android:id="@+id/btn_z"
+            android:onClick="verificaLetra"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:text="Z"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#8ce17b" />
+
+    </LinearLayout>
+
+</LinearLayout>
